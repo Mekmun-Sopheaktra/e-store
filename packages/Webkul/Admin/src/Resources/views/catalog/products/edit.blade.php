@@ -72,7 +72,7 @@
                             class="transparent-button px-1 py-1.5 hover:bg-gray-200 focus:bg-gray-200 dark:text-white dark:hover:bg-gray-800 dark:focus:bg-gray-800"
                         >
                             <span class="icon-store text-2xl"></span>
-                            
+
                             {{ $currentChannel->name }}
 
                             <input
@@ -109,7 +109,7 @@
                             <span class="icon-language text-2xl"></span>
 
                             {{ $currentLocale->name }}
-                            
+
                             <input
                                 type="hidden"
                                 name="locale"
@@ -190,7 +190,7 @@
                                             'attribute' => $attribute,
                                             'product'   => $product,
                                         ])
-            
+
                                         <x-admin::form.control-group.error :control-name="$attribute->code . (in_array($attribute->type, ['multiselect', 'checkbox']) ? '[]' : '')" />
                                     </x-admin::form.control-group>
 
@@ -229,7 +229,6 @@
                     @else
                         <!-- Channels View Blade File -->
                         @include('admin::catalog.products.edit.channels')
-
                         <!-- Categories View Blade File -->
                         @include('admin::catalog.products.edit.categories')
                     @endif

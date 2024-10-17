@@ -32,7 +32,6 @@
             <template v-if="isLoading">
                 <x-admin::shimmer.tree />
             </template>
-
             <template v-else>
                 <x-admin::tree.view
                     input-type="checkbox"

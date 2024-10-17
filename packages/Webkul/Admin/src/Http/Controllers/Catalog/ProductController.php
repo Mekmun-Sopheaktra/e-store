@@ -14,6 +14,7 @@ use Webkul\Admin\Http\Requests\ProductForm;
 use Webkul\Admin\Http\Resources\AttributeResource;
 use Webkul\Admin\Http\Resources\ProductResource;
 use Webkul\Attribute\Repositories\AttributeFamilyRepository;
+use Webkul\Category\Repositories\CategoryRepository;
 use Webkul\Core\Rules\Slug;
 use Webkul\Product\Helpers\ProductType;
 use Webkul\Product\Repositories\ProductAttributeValueRepository;
@@ -41,6 +42,7 @@ class ProductController extends Controller
         protected ProductDownloadableSampleRepository $productDownloadableSampleRepository,
         protected ProductInventoryRepository $productInventoryRepository,
         protected ProductRepository $productRepository,
+        protected CategoryRepository $categoryRepository,
     ) {}
 
     /**
@@ -135,8 +137,9 @@ class ProductController extends Controller
     public function edit(int $id)
     {
         $product = $this->productRepository->findOrFail($id);
+        $categories = $this->categoryRepository->all();
 
-        return view('admin::catalog.products.edit', compact('product'));
+        return view('admin::catalog.products.edit', compact('product', 'categories'));
     }
 
     /**

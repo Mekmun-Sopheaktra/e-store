@@ -129,10 +129,10 @@ return [
 
         'core' => [
             'channels' => [
-                'name'             => 'Default',
-                'meta-title'       => 'Demo store',
-                'meta-keywords'    => 'Demo store meta keyword',
-                'meta-description' => 'Demo store meta description',
+                'name'             => 'E-Store',
+                'meta-title'       => 'E-Store',
+                'meta-keywords'    => 'E-Store for Shopping Electronic',
+                'meta-description' => 'E-Store for Shopping Electronic',
             ],
 
             'currencies' => [
