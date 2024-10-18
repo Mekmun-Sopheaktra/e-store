@@ -30,6 +30,7 @@ class ProductResource extends JsonResource
     {
         $productTypeInstance = $this->getTypeInstance();
 
+        info('productTypeInstance', (array)json_encode($this));
         return [
             'id'          => $this->id,
             'sku'         => $this->sku,
