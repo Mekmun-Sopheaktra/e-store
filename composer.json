@@ -1,7 +1,7 @@
 {
-    "name": "bagisto/bagisto",
+    "name": "E-Store/E-Store",
     "type": "project",
-    "description": "Bagisto Laravel E-Commerce",
+    "description": "E-Store Laravel E-Commerce",
     "keywords": [
         "framework",
         "laravel"
