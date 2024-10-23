@@ -1,5 +1,5 @@
 {
-    "name": "E-Store/E-Store",
+    "name": "estore/estore",
     "type": "project",
     "description": "E-Store Laravel E-Commerce",
     "keywords": [
@@ -64,46 +64,46 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Webkul\\Admin\\": "packages/Webkul/Admin/src",
-            "Webkul\\Attribute\\": "packages/Webkul/Attribute/src",
-            "Webkul\\CartRule\\": "packages/Webkul/CartRule/src",
-            "Webkul\\CatalogRule\\": "packages/Webkul/CatalogRule/src",
-            "Webkul\\Category\\": "packages/Webkul/Category/src",
-            "Webkul\\Checkout\\": "packages/Webkul/Checkout/src",
-            "Webkul\\CMS\\": "packages/Webkul/CMS/src",
-            "Webkul\\Core\\": "packages/Webkul/Core/src",
-            "Webkul\\Customer\\": "packages/Webkul/Customer/src",
-            "Webkul\\DataGrid\\": "packages/Webkul/DataGrid/src",
-            "Webkul\\DataTransfer\\": "packages/Webkul/DataTransfer/src",
-            "Webkul\\DebugBar\\": "packages/Webkul/DebugBar/src",
-            "Webkul\\FPC\\": "packages/Webkul/FPC/src",
-            "Webkul\\Installer\\": "packages/Webkul/Installer/src",
-            "Webkul\\Inventory\\": "packages/Webkul/Inventory/src",
-            "Webkul\\MagicAI\\": "packages/Webkul/MagicAI/src",
-            "Webkul\\Marketing\\": "packages/Webkul/Marketing/src",
-            "Webkul\\Notification\\": "packages/Webkul/Notification/src",
-            "Webkul\\Paypal\\": "packages/Webkul/Paypal/src",
-            "Webkul\\Payment\\": "packages/Webkul/Payment/src",
-            "Webkul\\Product\\": "packages/Webkul/Product/src",
-            "Webkul\\Rule\\": "packages/Webkul/Rule/src",
-            "Webkul\\Sales\\": "packages/Webkul/Sales/src",
-            "Webkul\\Shipping\\": "packages/Webkul/Shipping/src",
-            "Webkul\\Shop\\": "packages/Webkul/Shop/src",
-            "Webkul\\Sitemap\\": "packages/Webkul/Sitemap/src",
-            "Webkul\\SocialLogin\\": "packages/Webkul/SocialLogin/src",
-            "Webkul\\SocialShare\\": "packages/Webkul/SocialShare/src",
-            "Webkul\\Tax\\": "packages/Webkul/Tax/src",
-            "Webkul\\Theme\\": "packages/Webkul/Theme/src",
-            "Webkul\\User\\": "packages/Webkul/User/src"
+            "Webkul\\Admin\\": "modules/store/Admin/src",
+            "Webkul\\Attribute\\": "modules/store/Attribute/src",
+            "Webkul\\CartRule\\": "modules/store/CartRule/src",
+            "Webkul\\CatalogRule\\": "modules/store/CatalogRule/src",
+            "Webkul\\Category\\": "modules/store/Category/src",
+            "Webkul\\Checkout\\": "modules/store/Checkout/src",
+            "Webkul\\CMS\\": "modules/store/CMS/src",
+            "Webkul\\Core\\": "modules/store/Core/src",
+            "Webkul\\Customer\\": "modules/store/Customer/src",
+            "Webkul\\DataGrid\\": "modules/store/DataGrid/src",
+            "Webkul\\DataTransfer\\": "modules/store/DataTransfer/src",
+            "Webkul\\DebugBar\\": "modules/store/DebugBar/src",
+            "Webkul\\FPC\\": "modules/store/FPC/src",
+            "Webkul\\Installer\\": "modules/store/Installer/src",
+            "Webkul\\Inventory\\": "modules/store/Inventory/src",
+            "Webkul\\MagicAI\\": "modules/store/MagicAI/src",
+            "Webkul\\Marketing\\": "modules/store/Marketing/src",
+            "Webkul\\Notification\\": "modules/store/Notification/src",
+            "Webkul\\Paypal\\": "modules/store/Paypal/src",
+            "Webkul\\Payment\\": "modules/store/Payment/src",
+            "Webkul\\Product\\": "modules/store/Product/src",
+            "Webkul\\Rule\\": "modules/store/Rule/src",
+            "Webkul\\Sales\\": "modules/store/Sales/src",
+            "Webkul\\Shipping\\": "modules/store/Shipping/src",
+            "Webkul\\Shop\\": "modules/store/Shop/src",
+            "Webkul\\Sitemap\\": "modules/store/Sitemap/src",
+            "Webkul\\SocialLogin\\": "modules/store/SocialLogin/src",
+            "Webkul\\SocialShare\\": "modules/store/SocialShare/src",
+            "Webkul\\Tax\\": "modules/store/Tax/src",
+            "Webkul\\Theme\\": "modules/store/Theme/src",
+            "Webkul\\User\\": "modules/store/User/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
             "Tests\\": "tests/",
-            "Webkul\\Admin\\Tests\\": "packages/Webkul/Admin/tests",
-            "Webkul\\Core\\Tests\\": "packages/Webkul/Core/tests",
-            "Webkul\\DataGrid\\Tests\\": "packages/Webkul/DataGrid/tests",
-            "Webkul\\Shop\\Tests\\": "packages/Webkul/Shop/tests"
+            "Webkul\\Admin\\Tests\\": "modules/store/Admin/tests",
+            "Webkul\\Core\\Tests\\": "modules/store/Core/tests",
+            "Webkul\\DataGrid\\Tests\\": "modules/store/DataGrid/tests",
+            "Webkul\\Shop\\Tests\\": "modules/store/Shop/tests"
         }
     },
     "scripts": {
@@ -125,7 +125,7 @@
     },
     "repositories": [{
         "type": "path",
-        "url": "packages/*/*",
+        "url": "modules/*/*",
         "options": {
             "symlink": true
         }
@@ -133,18 +133,12 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true,
+        "sort-modules": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true,
             "php-http/discovery": true
         }
     },
     "minimum-stability": "stable",
-    "prefer-stable": true,
-    "support": {
-        "issues": "https://github.com/bagisto/bagisto/issues",
-        "forum": "https://forums.bagisto.com",
-        "source": "https://github.com/bagisto/bagisto",
-        "docs": "https://devdocs.bagisto.com"
-    }
+    "prefer-stable": true
 }

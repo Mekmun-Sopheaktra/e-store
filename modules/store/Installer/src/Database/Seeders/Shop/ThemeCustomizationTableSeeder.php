@@ -13,7 +13,7 @@ class ThemeCustomizationTableSeeder extends Seeder
     /**
      * Base path for the images.
      */
-    const BASE_PATH = 'packages/Webkul/Installer/src/Resources/assets/images/seeders/theme/';
+    const BASE_PATH = 'modules/Webkul/Installer/src/Resources/assets/images/seeders/theme/';
 
     /**
      * Seed the application's database.

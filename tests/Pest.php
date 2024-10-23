@@ -11,10 +11,10 @@
 |
 */
 
-uses(Webkul\Admin\Tests\AdminTestCase::class)->in('../packages/Webkul/Admin/tests');
-uses(Webkul\Core\Tests\CoreTestCase::class)->in('../packages/Webkul/Core/tests');
-uses(Webkul\DataGrid\Tests\DataGridTestCase::class)->in('../packages/Webkul/DataGrid/tests');
-uses(Webkul\Shop\Tests\ShopTestCase::class)->in('../packages/Webkul/Shop/tests');
+uses(Webkul\Admin\Tests\AdminTestCase::class)->in('../modules/store/Admin/tests');
+uses(Webkul\Core\Tests\CoreTestCase::class)->in('../modules/store/Core/tests');
+uses(Webkul\DataGrid\Tests\DataGridTestCase::class)->in('../modules/store/DataGrid/tests');
+uses(Webkul\Shop\Tests\ShopTestCase::class)->in('../modules/store/Shop/tests');
 
 /*
 |--------------------------------------------------------------------------

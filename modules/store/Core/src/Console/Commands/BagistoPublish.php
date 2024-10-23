@@ -50,7 +50,7 @@ class BagistoPublish extends Command
     }
 
     /**
-     * Publish all packages.
+     * Publish all modules.
      */
     public function publishAllPackages(): void
     {

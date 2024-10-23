@@ -34,7 +34,7 @@ class ProductTableSeeder extends Seeder
     /**
      * Base path for the images.
      */
-    const BASE_PATH = 'packages/Webkul/Installer/src/Resources/assets/images/seeders/products/';
+    const BASE_PATH = 'modules/Webkul/Installer/src/Resources/assets/images/seeders/products/';
 
     /**
      * Seed the application's database.
